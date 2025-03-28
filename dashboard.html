@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Aqui ira el dashboard</h1>
-    <a href="index.html">Ir a pagina principal</a>
+<body class="bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 min-h-screen flex">
+    <!-- Sidebar -->
+    <nav class="absolute left-4 top-4 w-1/5  p-6  h-[610px] ml-7">
+        <div class="absolute w-2/3 h-12 left-6">
+            <h1 class="absolute left-[80px] text-4xl font-bold text-black-600">edu</h1>
+            <span class="absolute top-1 text-3xl left-10 material-symbols-outlined">
+                trip_origin
+                </span>
+        </div>
+        <div class="absolute w-full h-[300px] top-32">
+           <!--Schedule--> 
+           <div class="group absolute hover:bg-white rounded-3xl h-10 w-full">
+                <span class=" absolute -top-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-br-3xl"></span>
+                </span> 
+                <span class=" absolute -bottom-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl"></span>
+                </span> 
+                <span class="absolute top-2 left-8 material-symbols-outlined text-blue-950 cursor-pointer">
+                    calendar_month
+                    </span>
+                <a href="#" class="absolute top-2 left-16 block text-blue-950  w-full font-bold ">
+                    Schedule
+                </a>
+           </div>
+            <!--Progress-->
+            <div class="group absolute top-[4rem] hover:bg-white rounded-3xl h-10 w-full">
+                <span class=" absolute -top-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-br-3xl"></span>
+                </span> 
+                <span class=" absolute -bottom-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl"></span>
+                </span> 
+                <span class="absolute top-2 left-8  material-symbols-outlined text-blue-950 hover:text-blue-600 cursor-pointer">
+                    progress_activity
+                    </span>
+                <a href="#" class="absolute top-2  left-16 block text-blue-950 hover:text-blue-600 font-bold">Progress</a>
+            </div>
+            <!--Messages-->
+            <div class="group absolute top-[8rem] hover:bg-white rounded-3xl h-10 w-full">
+                <span class=" absolute -top-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-br-3xl"></span>
+                </span> 
+                <span class=" absolute -bottom-5  right-[2.5rem] w-5 h-5 group-hover:bg-white">
+                    <span class="absolute h-5 w-5 bg-[#e4c9ff] rounded-tr-3xl"></span>
+                </span> 
+                <span class="absolute top-2 left-8 hover:text-blue-600 cursor-pointer text-blue-950 material-symbols-outlined">
+                chat_bubble
+                </span>
+            <a href="#" class="absolute top-2 left-16 block text-blue-950 hover:text-blue-600 font-bold">Messages</a>
+            </div>
+            <!--Settings-->
+            <div class="group absolute top-[12.3rem] hover:bg-white rounded-3xl h-10 w-full ">
+                <span class=" absolute -top-4  right-[2.5rem] w-4 h-4 group-hover:bg-white">
+                    <span class="absolute h-4 w-4 bg-[#e4c9ff] rounded-br-3xl"></span>
+                </span> 
+                <span class="absolute -bottom-5  right-[2.5rem] w-5 h-5 group-hover:bg-white">
+                    <span class="absolute h-5 w-5 bg-[#e4c9ff] rounded-tr-3xl"></span>
+                </span> 
+                <span class="absolute top-2 left-8 hover:text-blue-600 cursor-pointer text-blue-950 material-symbols-outlined">
+                    settings
+                    </span>
+                <a href="#" class="absolute top-2 left-16 block text-blue-950 hover:text-blue-600 font-bold">Settings</a>
+            </div>
+            
+        </div>
+        <div class="absolute bottom-14 font-bold left-12 w-32 h-12   hover:text-red-800">
+            <span class="absolute top-2 left-3   material-symbols-outlined">
+                logout
+                </span>
+            <a class="absolute top-2 left-12" href="#">Log out</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+        <div class="absolute top-4 left-[290px] bg-white w-2/3 h-[610px] rounded-xl">
+            <div class="absolute left-16 bg-white w-1/4 h-12 p-3 rounded-lg top-5">
+                <span class="absolute left-2 text-2xl material-symbols-outlined top-2">
+                    search
+                    </span>
+                <h5 class="absolute left-10">Search</h5>
+            </div>
+            <div class="absolute top-[100px] left-16 p-3 bg-slate-900 w-7/12 h-40 rounded-lg">
+                <h2 class="absolute right-10 top-10 text-white font-bold text-3xl">Effective education!</h2>
+                <h6 class="absolute right-8 top-20 text-white text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h6>
+            </div>
+            <div class="absolute top-[280px] left-14 bg-white w-7/12 h-9 ">
+                <h2 class="absolute left-2 text-black-600 font-bold">Events</h2>
+                <a class="absolute text-black-600 right-8 top-1" href="">More</a>
+                <span class="absolute right-0 top-1 text-black material-symbols-outlined">
+                    trending_flat
+                    </span>
+            </div>
+            <!--Workshop-->
+            <div class="absolute bg-white w-40 h-24 top-[320px] left-14 shadow-lg rounded-lg p-2">
+                <h2 class="absolute left-4 font-bold text-lg">26.02</h2>
+                <h5 class="absolute left-4 top-9 text-gray-600 text-sm">18:00-19:30</h5>
+                <h2 class="absolute left-4 top-16 font-bold text-sm">UX/UI workshop</h2>
+            </div>
+            <!--English Lecture-->
+            <div class="absolute bg-white w-40 h-24 top-[320px] left-[235px] shadow-lg rounded-lg p-2">
+                <h2 class="absolute left-4 font-bold text-lg">02.03</h2>
+                <h5 class="absolute left-4 top-9 text-gray-600 text-sm">18:00-19:30</h5>
+                <h2 class="absolute left-4 top-16 font-bold text-sm">English Lecture</h2>
+            </div>
+            <!--Bussines Lecture-->
+            <div class="absolute bg-white w-40 h-24 top-[320px] left-[410px] shadow-lg rounded-lg p-2">
+                <h2 class="absolute left-4 font-bold text-lg">07.03</h2>
+                <h5 class="absolute left-4 top-9 text-gray-600 text-sm">18:00-19:30</h5>
+                <h2 class="absolute left-4 top-16 font-bold text-sm">English Lecture</h2>
+            </div>
+            <!---->
+            <div class="absolute top-[430px] left-14 bg-white w-7/12 h-9 ">
+                <h2 class="absolute left-2 text-black-600 font-bold">Timing Progress</h2>
+                <a class=" absolute text-black-600 right-8 top-1"href="">More</a>
+                <span class="absolute right-0 top-1 text-black material-symbols-outlined">
+                    trending_flat
+                    </span>
+            </div>
+            <!--Progreso grafica-->
+            <div class="absolute bottom-4 left-14 bg-white w-64 h-32 rounded-lg shadow-lg">
+                <img class=" absolute left-10 top-3 w-48 rounded-lg" src="https://mexico.unir.net/wp-content/uploads/sites/6/2022/05/grafico-diagramas.jpg"alt="">
+            </div> 
+            <div class="absolute bottom-4 left-[330px] bg-white w-64 h-32 rounded-lg shadow-lg">
+                <img class=" absolute left-8 top-3 w-48 rounded-lg" src="https://assets.justinmind.com/wp-content/uploads/2018/09/progress-bar-examples-style-4.png" alt="">
+            </div> 
+        </div>
+            <!-- Courses -->
+            <div class="absolute right-8 top-4 bg-white rounded-xl shadow-lg p-3 w-1/4 h-[610px]">
+                <div class="absolute right-8 top-6 w-64">
+                    <span class="absolute material-symbols-outlined">
+                        notifications
+                        </span>
+                    <h5 class="absolute right-6 font-bold w-16 h-12">Everardo</h5>
+                </div>
+                <h5 class="absolute top-20 left-6 w-32 text-lg font-semibold">Your Courses</h5>
+                <a class="absolute top-20 right-14" href="">More</a>
+                <span class="absolute top-20 right-6 material-symbols-outlined">
+                    arrow_forward
+                    </span>
+                <!--Artes-->    
+                <div class="absolute top-32 left-6 rounded-lg shadow-xl w-64 h-16">
+                    <span class="absolute left-2 material-symbols-outlined text-5xl">
+                        brush
+                        </span>
+                    <h4 class="absolute font-bold left-16">Art</h4>
+                    <h5 class="absolute left-16 top-5">35 hrs</h5>
+                    <span class="absolute right-6 top-5 material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </div>
+                <!--Negocios-->  
+                <div class="absolute top-52 left-6 rounded-lg shadow-xl w-64 h-16">
+                    <span class="absolute left-2 material-symbols-outlined text-5xl top-2">
+                        local_atm
+                        </span>
+                    <h4 class="absolute font-bold left-16 top-2">Bussines</h4>
+                    <h5 class="absolute left-16 top-7">40 hrs</h5>
+                    <span class="absolute right-6 top-5 material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </div>
+                <!--Ciencias-->  
+                <div class="absolute top-72 left-6 rounded-lg shadow-xl w-64 h-16">
+                    <span class="absolute left-2 top-2 text-5xl material-symbols-outlined">
+                        science
+                        </span>
+                    <h4 class="absolute font-bold left-16 top-2">Science</h4>
+                    <h5 class="absolute left-16 top-7">40 hrs</h5>
+                    <span class="absolute right-6 top-5 material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </div>
+                <!--Matematicas-->  
+                <div class="absolute top-[365px] left-6 rounded-lg shadow-xl w-64 h-16">
+                    <span class="absolute left-2 top-2 text-5xl material-symbols-outlined">
+                        calculate
+                        </span>
+                    <h4 class="absolute font-bold left-16 top-2">Mathematics</h4>
+                    <h5 class="absolute left-16 top-7">15 hrs</h5>
+                    <span class="absolute right-6 top-5 material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </div>
+                <!--Premium-->
+                <div class="absolute top-[450px] left-10 w-60 h-36 bg-gray-950 rounded-lg cursor-pointer">
+                    <span class="absolute bottom-4 right-6 text-white material-symbols-outlined">
+                        trending_flat
+                        </span>
+                    <h6 class="absolute bottom-2 left-2 text-white font-bold p-3">Update to premium</h6>
+                </div>
+            </div>
+       
+
+    </main>
 </body>
 </html>
